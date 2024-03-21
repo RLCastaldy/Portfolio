@@ -8,12 +8,12 @@ const styles = {
   
   }
   
-  function Content() {
+  function Footer() {
     return (
       <header style={styles.heading} className="header">
-      <h1 style={styles.h1}>Aspiring Developer</h1>
+      <h1 style={styles.h1}>Hire Me!!</h1>
     </header>
     );
   }
   
-  export default Content;
+  export default Footer;
