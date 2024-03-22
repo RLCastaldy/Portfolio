@@ -1,0 +1,15 @@
+
+    .name {
+      color: white;
+    }
+
+    .navBar {
+      background: darkblue;
+      color: white;
+      display: flex;
+      padding: 15px;
+    }
+
+    .navLinks {
+      color: white;
+    }
