@@ -1,4 +1,4 @@
-import './Header.css';
+import '../styles/Header.css';
 import React, { useState } from 'react';
 import AboutMe from './AboutMe';
 import Portfolio from './Portfolio';
