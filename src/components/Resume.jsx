@@ -1,16 +1,9 @@
-import '../styles/Project.css';
-
-const styles = {
-    h1: {
-      fontSize: '100px'
-    }
-  
-  }
+import '../styles/Resume.css';
   
   function Resume() {
     return (
-      <header className="project">
-      <h1 style={styles.h1}>Resume</h1>
+      <header className="Resume">
+      <h1>Resume<br></br><br></br>Download Resume<br></br><br></br>Technologies: HTML CSS JS</h1>
     </header>
     );
   }

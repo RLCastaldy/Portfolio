@@ -1,16 +1,9 @@
-import '../styles/Project.css';
-
-const styles = {
-    h1: {
-      fontSize: '100px'
-    }
-  
-  }
+import '../styles/Contact.css';
   
   function Contact() {
     return (
-      <header className="project">
-      <h1 style={styles.h1}>Contact</h1>
+      <header className="Contact">
+      <h1>Contact</h1>
     </header>
     );
   }
