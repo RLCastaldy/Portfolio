@@ -1,3 +1,10 @@
-.heading {
-    background: red
+     .footer {
+    background: darkblue;
+    color: white;
+    display: flex;
+    padding: 15px;
+  }
+
+  .footLinks {
+    color: white;
   }

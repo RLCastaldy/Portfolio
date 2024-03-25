@@ -1,4 +1,10 @@
 import './Header.css';
+import React, { useState } from 'react';
+import AboutMe from './AboutMe';
+import Portfolio from './Portfolio';
+import Contact from './Contact';
+import Resume from './Resume';
+
 
 const styles = {
   myName: {
@@ -13,19 +19,32 @@ const styles = {
   navLink: {
     marginLeft: '25px',
   }
-}
+};
+
 
 function Header() {
+  const [activeSection, setActiveSection] = useState('aboutMe');
+
+  const handleNavLinkClick = (section) => {
+    setActiveSection(section);
+  };
   return (
-    <nav style={styles.nav} className="navBar">
-      <div>
-        <p style={styles.myName} className="name">Richard Castaldy</p>
-      </div>
-      <a href="/" style= {styles.navLink} className="navLinks">About Me</a>
-      <a href="/" style= {styles.navLink} className="navLinks">Portfolio</a>
-      <a href="/" style= {styles.navLink} className="navLinks">Contact</a>
-      <a href="/" style= {styles.navLink} className="navLinks">Resume</a>
-    </nav>
+    <div>
+      <nav style={styles.nav} className="navBar">
+        <div>
+          <p style={styles.myName} className="name">Richard Castaldy</p>
+        </div>
+        <a href="/" style={styles.navLink} className="navLinks" onClick={(e) => { e.preventDefault(); handleNavLinkClick('aboutMe'); }}>About Me</a>
+        <a href="/" style={styles.navLink} className="navLinks" onClick={(e) => { e.preventDefault(); handleNavLinkClick('portfolio'); }}>Portfolio</a>
+        <a href="/" style={styles.navLink} className="navLinks" onClick={(e) => { e.preventDefault(); handleNavLinkClick('contact'); }}>Contact</a>
+        <a href="/" style={styles.navLink} className="navLinks" onClick={(e) => { e.preventDefault(); handleNavLinkClick('resume'); }}>Resume</a>
+
+      </nav>
+      {activeSection === 'aboutMe' && <AboutMe />}
+      {activeSection === 'portfolio' && <Portfolio />}
+      {activeSection === 'contact' && <Contact />}
+      {activeSection === 'resume' && <Resume />}
+    </div>
   );
 }
 

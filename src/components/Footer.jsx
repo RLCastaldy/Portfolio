@@ -1,16 +1,20 @@
 import './Footer.css';
 
 const styles = {
-    h1: {
-      fontSize: '100px'
-    }
-  
+  footer: {
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  footLinks: {
+    marginLeft: '25px',
   }
+};
   
   function Footer() {
     return (
-      <header className="heading">
-      <h1 style={styles.h1}>Hire Me!!</h1>
+      <header className="footer">
+        <a href="https://github.com/RLCastaldy" style={styles.footer} className='footer'>GitHub</a>
+        <a href="https://www.linkedin.com/in/richard-castaldy-0b5b732bb/" style={styles.footLinks} className='footLinks'>LinkedIn</a>
     </header>
     );
   }
