@@ -1,4 +1,4 @@
-import './Project.css';
+import '../styles/Project.css';
 
 const styles = {
     h1: {
