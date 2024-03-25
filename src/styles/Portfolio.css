@@ -1,0 +1,14 @@
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: lightblue;
+    color: black;
+  }
+  
+  .portLinks {
+    color: black;
+    width: 50%; /* Set width to 50% to display two links per row */
+    text-align: center; /* Center the text within each link */
+    font-size: 20px;
+  }

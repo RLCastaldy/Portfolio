@@ -1,8 +1,13 @@
-     .footer {
-    background: darkblue;
-    color: white;
-  }
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: darkblue;
+}
 
-  .footLinks {
-    color: white;
-  }
+.footLinks {
+  width: 15%; /* Set width to 50% to display two links per row */
+  text-align: center; /* Center the text within each link */
+  font-size: 20px;
+  color: white;
+}

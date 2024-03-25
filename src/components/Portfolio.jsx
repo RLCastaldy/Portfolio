@@ -1,18 +1,14 @@
-import '../styles/Project.css';
+import '../styles/Portfolio.css';
 
-const styles = {
-    h1: {
-      fontSize: '100px'
-    }
-  
-  }
-  
-  function Portfolio() {
-    return (
-      <header className="project">
-      <h1 style={styles.h1}>Portfolio</h1>
+function Portfolio() {
+  return (
+    <header className="portfolio">
+      <a href="https://github.com/RLCastaldy/ReadME_Builder" className='portLinks'>ReadME Builder</a>
+      <a href="https://github.com/RLCastaldy/MovieReviewFinder" className='portLinks'>Movie Review Finder</a>
+      <a href="https://github.com/RLCastaldy/PersonalAssistant" className='portLinks'>Personal Assistant</a>
+      <a href="https://github.com/RLCastaldy/DailyWorkCalendar" className='portLinks'>Daily Work Calendar</a>
     </header>
-    );
-  }
-  
-  export default Portfolio;
+  );
+}
+
+export default Portfolio;
