@@ -1,19 +1,18 @@
+import './Project.css';
+
 const styles = {
-    heading: {
-      background: 'Red'
-    },
     h1: {
       fontSize: '100px'
     }
   
   }
   
-  function Content() {
+  function Project() {
     return (
-      <header style={styles.heading} className="header">
+      <header className="heading">
       <h1 style={styles.h1}>Aspiring Developer</h1>
     </header>
     );
   }
   
-  export default Content;
+  export default Project;

@@ -1,7 +1,6 @@
+import './Footer.css';
+
 const styles = {
-    heading: {
-      background: 'Red'
-    },
     h1: {
       fontSize: '100px'
     }
@@ -10,7 +9,7 @@ const styles = {
   
   function Footer() {
     return (
-      <header style={styles.heading} className="header">
+      <header className="heading">
       <h1 style={styles.h1}>Hire Me!!</h1>
     </header>
     );

@@ -1,12 +1,12 @@
 import Header from "./components/Header";
-import Content from "./components/Content";
+import Project from "./components/Project";
 import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="portfolioApp">
       <Header />
-      <Content />
+      <Project />
       <Footer />
     </div>
   );
