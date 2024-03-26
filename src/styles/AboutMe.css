@@ -2,8 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: lightblue;
-    color: black;
+    background: #4ECDC4;
+    color: #5C0029;
     width: 100%; /* Set width to 50% to display two links per row */
     text-align: center; /* Center the text within each link */
     font-size: 15px;

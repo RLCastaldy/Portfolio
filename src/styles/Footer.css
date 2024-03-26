@@ -2,13 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: darkblue;
+  background: #0D324D;
 }
 
 .footLinks {
   width: 15%; /* Set width to 50% to display two links per row */
   text-align: center; /* Center the text within each link */
   font-size: 20px;
-  color: white;
+  color: #9DA2AB;
   margin: 15px;
 }

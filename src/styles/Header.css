@@ -1,6 +1,6 @@
 
     .name {
-      color: white;
+      color: #A188A6;
       font-size: 35px;
       text-align: left;
       flex: 1;
@@ -12,18 +12,18 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      background: darkblue;
+      background: #0D324D;
     }
 
     .navLinks {
       width: auto;
       text-align: center; /* Center the text within each link */
       font-size: 20px;
-      color: white;
+      color: #9DA2AB;
       margin: 40px;
     }
 
     .activeLink {
       font-weight: bold; /* Example styling for the active link */
-      color: #007bff; /* Example color for the active link */
+      color: #5C0029; /* Example color for the active link */
     }

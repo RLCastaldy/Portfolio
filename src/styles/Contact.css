@@ -2,8 +2,8 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   background: lightblue;
-   color: black;
+   background: #4ECDC4;
+   color: #5C0029;
    width: 100%; /* Set width to 50% to display two links per row */
    text-align: center; /* Center the text within each link */
    font-size: 20px;
@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center; /* Center the content horizontally */
   align-items: center; /* Center the content vertically */
-  background: lightblue; /* Set the background color to lightblue */
+  background: #4ECDC4; /* Set the background color to lightblue */
 }
 
 .form {
@@ -37,5 +37,5 @@ button {
 }
 
 .error-text {
-  color: red; /* Style the error message text */
+  color: #5C0029; /* Style the error message text */
 }
