@@ -1,17 +1,15 @@
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Contact.css';
 import { validateEmail } from '../utils/helpers.js';
-
 
 function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
+  const [errors, setErrors] = useState({ name: '', email: '', message: '' });
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-
     if (name === 'name') {
       setName(value);
     } else if (name === 'email') {
@@ -21,18 +19,33 @@ function Contact() {
     }
   };
 
+  useEffect(() => {
+    let errorsCopy = { name: '', email: '', message: '' };
+
+    if (name.trim() === '') {
+      errorsCopy.name = 'Required';
+    }
+
+    if (email.trim() === '' || !validateEmail(email)) {
+      errorsCopy.email = 'Email is invalid';
+    }
+
+    if (message.trim() === '') {
+      errorsCopy.message = 'Required';
+    }
+
+    setErrors(errorsCopy);
+  }, [name, email, message]);
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    if (!validateEmail(email)) {
-      setErrorMessage('Email is invalid');
-      return;
+    if (Object.values(errors).every((error) => error === '')) {
+      // Form submission logic here
+      setName('');
+      setEmail('');
+      setMessage('');
     }
-
-    // Clear the form fields after submission
-    setName('');
-    setEmail('');
-    setMessage('');
   };
 
   return (
@@ -45,6 +58,7 @@ function Contact() {
           type="text"
           placeholder="Name"
         />
+        {errors.name && <div className="error-text">{errors.name}</div>}
         <input
           value={email}
           name="email"
@@ -52,19 +66,16 @@ function Contact() {
           type="email"
           placeholder="Email"
         />
+        {errors.email && <div className="error-text">{errors.email}</div>}
         <textarea
           value={message}
           name="message"
           onChange={handleInputChange}
           placeholder="Message"
         ></textarea>
+        {errors.message && <div className="error-text">{errors.message}</div>}
         <button type="submit">Submit</button>
       </form>
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
     </div>
   );
 }
