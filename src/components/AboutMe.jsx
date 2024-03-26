@@ -1,8 +1,10 @@
 import '../styles/AboutMe.css';
+import profileImage from '../assets/profile.jpg'
   
   function AboutMe() {
     return (
       <header className="AboutMe">
+      <img src={profileImage} alt="Profile" className="profileImage" /> {/* Display the profile image */}
       <h1>I am an aspiring developer hoping to break into the professional world of web development.
       I am eager to get started with a company so I can continue building on the core concepts we learned in bootcamp.<br></br> <br></br>
       I am familiar with working on front end technologies such as HTML, CSS, and JS. I also have some experience working with MySQL, MongoDB, and various NPM packages. I can create a restful API and make calls to it with Node JS. I am capable of creating routes to retrieve, post, and delete data as well as test them in Insomnia.<br></br><br></br>
