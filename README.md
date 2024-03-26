@@ -4,7 +4,9 @@
 
 ## Description
 
-A compilation of all my current development projects.
+A compilation of all my current development projects.<br>
+<br>
+![Screenshot 2024-03-26 162410](https://github.com/RLCastaldy/Portfolio/assets/140565239/57358943-3754-40ce-b48e-2370bb9f09b7)
 
 ## Table of Contents
 
