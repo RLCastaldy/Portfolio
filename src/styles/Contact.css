@@ -8,3 +8,30 @@
    text-align: center; /* Center the text within each link */
    font-size: 20px;
  }
+
+.container {
+  max-width: 600px; /* Set the maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input,
+textarea {
+  width: 100%; /* Set the width of the input fields to 100% of the container */
+  padding: 8px; /* Add padding to the input fields */
+  margin: 5px 0; /* Add margin around the input fields */
+}
+
+button {
+  padding: 10px 20px; /* Add padding to the button */
+  margin-top: 10px; /* Add margin to the top of the button */
+}
+
+.error-text {
+  color: red; /* Style the error message text */
+}
