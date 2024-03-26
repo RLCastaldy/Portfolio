@@ -7,6 +7,8 @@ function Portfolio() {
       <a href="https://github.com/RLCastaldy/MovieReviewFinder" className='portLinks'>Movie Review Finder</a>
       <a href="https://github.com/RLCastaldy/PersonalAssistant" className='portLinks'>Personal Assistant</a>
       <a href="https://github.com/RLCastaldy/DailyWorkCalendar" className='portLinks'>Daily Work Calendar</a>
+      <a href="https://github.com/RLCastaldy/DailyWorkCalendar" className='portLinks'>Daily Work Calendar</a>
+      <a href="https://github.com/RLCastaldy/DailyWorkCalendar" className='portLinks'>Daily Work Calendar</a>
     </header>
   );
 }
