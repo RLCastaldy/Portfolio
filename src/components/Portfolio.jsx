@@ -13,6 +13,7 @@ function Portfolio() {
       <div className="projectContainer">
         <img src={quizImage} alt="Quiz" className="portImage" /> {/* Display the profile image */}
         <div className="projectLinks">
+          <p className='portLinks'>Quiz</p>
           <a href="https://rlcastaldy.github.io/Quiz/" className='portLinks'>Quiz App</a><br></br>
           <a href="https://github.com/RLCastaldy/Quiz" className='portLinks'>Quiz Repo</a>
         </div>
@@ -21,6 +22,7 @@ function Portfolio() {
       <div className="projectContainer">
         <img src={movieImage} alt="Movie" className="portImage" /> {/* Display the profile image */}
         <div className="projectLinks">
+          <p className='portLinks'>Movie Reviews</p>
           <a href="https://rlcastaldy.github.io/MovieReviewFinder/" className='portLinks'>Movie Review Finder App</a><br></br>
           <a href="https://github.com/RLCastaldy/MovieReviewFinder" className='portLinks'>Movie Review Finder Repo</a>
         </div>
@@ -29,6 +31,7 @@ function Portfolio() {
       <div className="projectContainer">
         <img src={assistantImage} alt="Assistant" className="portImage" /> {/* Display the profile image */}
         <div className="projectLinks">
+          <p className='portLinks'>Personal Assistant</p>
           <a href="https://personalassistant.onrender.com/" className='portLinks'>Personal Assistant App</a><br></br>
           <a href="https://github.com/RLCastaldy/PersonalAssistant" className='portLinks'>Personal Assistant Repo</a>
         </div>
@@ -37,6 +40,7 @@ function Portfolio() {
       <div className="projectContainer">
         <img src={scheduleImage} alt="Schedule" className="portImage" /> {/* Display the profile image */}
         <div className="projectLinks">
+          <p className='portLinks'>Work Day Scheduler</p>
           <a href="https://rlcastaldy.github.io/DailyWorkCalendar/" className='portLinks'>Work Day Scheduler App</a><br></br>
           <a href="https://github.com/RLCastaldy/DailyWorkCalendar" className='portLinks'>Work Day Scheduler Repo</a>
         </div>
@@ -45,6 +49,7 @@ function Portfolio() {
       <div className="projectContainer">
         <img src={passwordImage} alt="Password" className="portImage" /> {/* Display the profile image */}
         <div className="projectLinks">
+          <p className='portLinks'>Password Generator</p>
           <a href="https://rlcastaldy.github.io/Password-Generator/" className='portLinks'>Password Generator App</a><br></br>
           <a href="https://github.com/RLCastaldy/Password-Generator" className='portLinks'>Password Generator Repo</a>
         </div>
@@ -53,6 +58,7 @@ function Portfolio() {
       <div className="projectContainer">
         <img src={weatherImage} alt="Weather" className="portImage" /> {/* Display the profile image */}
         <div className="projectLinks">
+          <p className='portLinks'>Weather Forecast</p>
           <a href="https://rlcastaldy.github.io/Weather-Forecast/" className='portLinks'>Weather Forecast App</a><br></br>
           <a href="https://github.com/RLCastaldy/Weather-Forecast" className='portLinks'>Weather Forecast Repo</a>
         </div>
